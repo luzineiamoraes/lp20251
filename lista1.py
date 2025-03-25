@@ -55,22 +55,50 @@ def q08():
     
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
+def q09():
+    num=float(input("Digite um numero real"))
+    print(f'{num/4}')
+
+
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q10():
+    num1=float(input("Digite um numero real"))
+    num2=float(input("Digite o segundo numero real"))
+    num3=float(input("Digite o terceiro numero real"))
+    print(f'{(num1+num2+num3)/3}')
+    
+
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def q11():
+    num1= float(input('num1:'))
+    num2=float(input('num2:'))
+    print(f'{num1}+{num2} = {num1}+{num2}')
+    print(f'{num1}-{num2} = {num1}-{num2}')
+    print(f'{num1}*{num2} = {num1}*{num2}')
+    print(f'{num1}/{num2} = {num1}/{num2}')
+    
+
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q12():
+    num=float(input("Digite um numero real"))
+    print(f"resultado foi de:{num**2} ")
+   
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
+def q13():
+    saldo=float(input('Digite o saldo de:'))
+    print(f')
 
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
