@@ -97,11 +97,19 @@ def q12():
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
 def q13():
-    saldo=float(input('Saldo:R$'))
-    print(f' ')
+    saldo = float(input('Saldo:R$'))
+    novo_saldo = (saldo*1.02)
+    print(f"esse é o {saldo},e esse é o valor final{novo_saldo}")
+    
 
 #14. Faça um programa que leia a base e a altura de um retângulo
-#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
+#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
+def q14():
+    base = float(input('base*2')) 
+    altura = float(input(altura*2))
+    perimetro = float((base*2 + altura*2))
+    area = float(input(base * altura))
+    print(f'Esse é o valor do {perimetro}, e esse é o valor da {area}')   
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
@@ -152,4 +160,6 @@ def q15():
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
-#    necessário também ler o valor da cotação do dólar.
+
+questao = int(input('Questão a executar: '))
+eval(f'q{questao}()')
