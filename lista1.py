@@ -131,12 +131,26 @@ def q15():
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def q16():
+    salario= float(input('salario: R$'))
+    percentual__reajuste= float(input('reajuste(%)'))
+    novo_salario= round(salario*percentual_reajuste/100+salario,2)
+    texto= f'''
+    salario de R$ {salario}
+    com reajuste de {percentual_reajuste}%
+    ficou em R$ {novo_salario}
+    '''
+    print(texto)
+
+
+
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -150,7 +164,11 @@ def q15():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
-
+def q18():
+    tempo_viagem = int('Tempo da viagem(minutos):'))/60
+    velocidade_media = int(input('Velocidade Media(km/h):'))
+    distancia = tempo_viagem * velocidade_media
+    litros_gastos = distancia
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
 #    taxa periódica de juros e o período de atraso. Ao final, o
@@ -159,7 +177,8 @@ def q15():
 #    valor da prestação acrescido dos juros. Considere juros simples.
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
-#    em real (R$) de um valor lido em dólar (US$). Para isso, será
+#    em real (R$) de um valor lido em dólar (US$). Para isso, será necessário também ler o valor da cotação do dólar.
+
 
 questao = int(input('Questão a executar: '))
 eval(f'q{questao}()')
