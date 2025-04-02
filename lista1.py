@@ -182,3 +182,4 @@ def q18():
 
 questao = int(input('Questão a executar: '))
 eval(f'q{questao}()')
+
