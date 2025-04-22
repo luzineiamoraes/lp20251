@@ -79,20 +79,37 @@ def q9():
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
 def q10():
-    num1 = int(input(Digite o primeiro numero inteiro))
-    num2 = int(input(Digite o segundo numero inteiro))
-    num3 = int(input(Digite o terceiro numero inteiro))
+    num1 = int(input('Digite o primeiro numero inteiro: '))
+    num2 = int(input('Digite o segundo numero inteiro: '))
+    num3 = int(input('Digite o terceiro numero inteiro: '))
     if (num1<num2<num3): # equivale a if (a < b and b < c)
         print((f' {num1} {num2} {num3}'))
     if (num2 < num1 < num3):
-        print(f' {num2}{num1}{num3}' ) 
+        print(f' {num2} {num1} {num3}' ) 
     if (num2 < num3 < num1):
-        print(f' {num2}{num3}{num1}')
-    if ()
+        print(f' {num2} {num3} {num1}')
+    if (num3<num1<num2):
+        print(f'{num3} {num1} {num2}')
+    if (num3<num2<num1):
+        print(f'{num3} {num2} {num1}')
+
     
 
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    num1 = int(input('Digite o primeiro numero inteiro:'))
+    num2 = int(input('Digite o segundo numero inteiro:'))
+    num3 = int(input('Digite o terceiro numero inteiro:'))
+    if (num1 > num2 > num3 ):
+        print((f'{num1}'))
+    if (num2 > num3 > num1):  
+        print((f'{num2}'))
+    if (num3 > num2 > num1):
+        print(f'{num3}')    
+       
+
+
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
