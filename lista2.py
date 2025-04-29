@@ -151,6 +151,17 @@ def q12():
 #Juvenil A 11 - 13 anos
 #Juvenil B 14 - 17 anos
 #Sênior maiores de 18 anos
+def q16():
+    idade = int(input('Digite a idade:'))
+    if (idade >= 5 and idade <=7):
+        print(f'infantilA')
+    if (idade >= 8 and idade <= 10):
+        print(f'infantilB')
+    if (idade >= 11 and idade <= 13):
+        print (f'juvenilA')
+    if (idade >= 14 and idade <=17):
+        print (f'juvenilB')            
+
 
 #17. Depois da liberação do governo para as mensalidades dos planos de saúde,
 #as pessoas começaram a fazer pesquisas para descobrir um bom plano, não
