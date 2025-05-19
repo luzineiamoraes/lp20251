@@ -76,26 +76,16 @@ def q5():
 #• 1 + 2 = 3, quarto termo, etc.
 # 1 1 2 3 5 8 13 21
 def q6():
-    num1 = int(input(':'))
-    num2 = int(input(''))
-    num3 = int(input(''))
-    num4 = int(input(''))
-    num5 = int(input(''))
-    num6 = int(input(':'))
-    num7 = int(input(''))
-    num8 = int(input(''))
-    num9 = int(input(''))
-    num10 = int(input(''))
-    num11 = int(input(':'))
-    num12 = int(input(''))
-    num13 = int(input(''))
-    num14 = int(input(''))
-    num15 = int(input(''))
-    num16 = int(input(':'))
-    num17 = int(input(''))
-    num18 = int(input(''))
-    num19 = int(input(''))
-    num20 = int(input(''))
+    ant = 1
+    atu = 1
+    print(ant, end=' ')
+    print(atu, end=' ')
+    for _ in range(18):
+        pro = ant + atu
+        print(pro, end=' ')
+        ant = atu
+        atu = pro
+
 
     
 
@@ -103,6 +93,24 @@ def q6():
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
+def q7():
+    resultado = ' '
+    media_geral = 0
+    for _ in range(3):
+        nome = input('Nome: ')
+        n1 = float(input('Nota1: '))
+        n2 = float(input('Nota2: '))
+        media = round((n1+n2)/2,1)
+        media_geral += media
+        resultado +=  f'{nome}\t{n1}\t{n2}\t{media}\n'
+    print('Nome\tN1\tN2\tMedia')
+    print(resultado)
+    print(f'Média da Turma: {round(media_geral/3,1)}')
+
+
+
+
+
 
 #8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -111,6 +119,17 @@ def q6():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+def q8():
+    resultado = ' '
+    for _ in range(3):
+        nome = input('Nome: ')
+        sal = float(input('Salário: R$ '))
+        irpf = sal * (0 if sal < 1300 else 0.1 if sal < 2300 else 0.15)
+        resultado += f'{nome}\t{sal}\t{round(irpf,2)}\n'
+        print('NOME\tSAL(R$)\tIRPF(R$)')
+        print(resultado)
+
+
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -121,6 +140,14 @@ def q6():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
+def q9():
+    resultado = ' '
+    for _ in range(4):
+        idade = input('IDADE: ')
+        OPI = input('OPINIAO: ')
+        media_idade = ('MÉDIA DAS IDADES')
+        QUANT_PESSOAS = ('QUANTIDADE DE PESSOAS')
+
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
