@@ -7,31 +7,75 @@ Lista de Exercícios referentes a coleções e arquivos em python
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
+def q1():
+    lista = []
+    for _ in range(15):
+        lista.append(random.randrange(100))
+    print(lista)
+    numero = int(input_int('Digite um número a ser buscado: ',0,100))
+    try:
+        posicao = lista.index(numero)
+    except ValueError:
+        print(f'{numero} não localizado na lista')
+    else:
+        print(f'Localizado na posição: {posicao}')
+        
 
 
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
-def 2º trimestre():
+def q2():
     letras = []
-    para _ faixa(15):
-        letras.acrescentar(chr(aleatório.intervalo(65,91)))
-        continuação = 1
-        para c em letras:
-        imprimir(para{continuação}:{c}')
-        continuação+=1
+    for _ in range(10):
+        letras.append(chr(random.randrange(65,91)))
+    cont = 1
+    for c in letras:
+        print(f'{cont}: {c}')
+        cont+=1
+        
+        
+    
 
 
 
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
-def q3():
-    lista = []
-    para _ em faixa(15):
+def q21():
+    qtde = input_int('Qtde de caracteres para a senha: ',8,20)
+    senha = ''
+
+    
+
+
 
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
+def q4():
+    numero = []
+    # for _ in ranger(8):
+    lista.append(random.randranger(10))
+    print(lista)
+    numero = int(input_int('Digite o número a ser buscado: '0,10))
+    try:
+        posicao = lista.index(numero)
+        except ValueError:
+            print(f'{numero} não localizado na lista' )
+        else
+            print(f'localizado na lista posicao_multiplo')
+        for i in range(1, 6):
+  multiplo = 6 * i
+  print(multiplo)
+  
+
+
+
+
+
+
+
+
 
 
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
