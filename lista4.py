@@ -32,6 +32,8 @@ def q2():
     for c in letras:
         print(f'{cont}: {c}')
         cont+=1
+
+
         
         
     
@@ -53,20 +55,20 @@ def q21():
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
 def q4():
-    numero = []
-    # for _ in ranger(8):
-    lista.append(random.randranger(10))
+    lista = []
+    for _ in range(8):
+        lista.append(random.randrange(10))
     print(lista)
-    numero = int(input_int('Digite o número a ser buscado: '0,10))
+    numero = int(input('Digite o número a ser buscado: '))
     try:
         posicao = lista.index(numero)
-        except ValueError:
-            print(f'{numero} não localizado na lista' )
-        else
-            print(f'localizado na lista posicao_multiplo')
-        for i in range(1, 6):
-  multiplo = 6 * i
-  print(multiplo)
+    except ValueError:
+        print(f'{numero} não localizado na lista' )
+    else:
+        print(f'localizado na lista posicao_multiplo')
+    for i in range(1, 6):
+        multiplo = 6 * i
+    print(multiplo)
   
 
 
@@ -83,6 +85,11 @@ def q4():
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno em formato tabulado.
 #Utilize quantas listas forem necessárias para armazenar os dados.
+def q5():
+    lista = []
+    for _ in range (10):
+        notas.append()
+
 
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
