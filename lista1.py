@@ -49,8 +49,7 @@ def q07():
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
 def q08():
-    num1= int(input(' Num1: '))
-    num2= int(input(' Num2: '))
+    num1= int(input(' Num2:'))    
     print(f'{num1}-{num2}= {num1-num2}')
     
 

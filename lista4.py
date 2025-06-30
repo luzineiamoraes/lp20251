@@ -43,9 +43,22 @@ def q2():
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
-def q21():
-    qtde = input_int('Qtde de caracteres para a senha: ',8,20)
-    senha = ''
+def q3():
+    arquivo = open
+    q3():
+    arquivo = open('questao3.csv','r')
+    for linha in arquivo:
+        numeros = linha.split(';')
+        resultado = ''
+        for numero in numeros:
+            resultado+=f'{numero}\t{"PAR" if int(numero)%2==0 else "IMPAR"}\n'
+        arquivo_saida = open('questao3.out','w')
+        arquivo_saida.write(resultado)
+    arquivo.close()
+    arquivo_saida.close()
+
+    
+    
 
     
 
@@ -102,6 +115,32 @@ def q5():
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
+def q7():
+    arquivo = open('questao7.csv','r')
+    produtos = []
+    cont_10 = 0
+    cont_10_20 = 0
+    cont_20 = 0
+    res = ''
+    for linha in arquivo:
+        dados = linha.split(';')
+        produto = dict()
+        produto['nome'] = dados[0]
+        produto['preco_compra'] = float(dados[1])
+        produto['preco_venda'] = float(dados[2])
+        produto['lucro'] = produto['preco_venda']/produto['preco_compra']-1
+        produtos.append(produto)
+        cont_10 += 1 if produto['lucro'] < 0.1 else 0;
+        cont_10_20 += 1 if produto['lucro'] >= 0.1 and produto['lucro'] <= 0.2 else 0;
+        cont_20 += 1 if produto['lucro'] > 0.2 else 0;
+        res += f'{produto["nome"]};{produto["preco_compra"]};{produto["preco_venda"]};{round(produto["lucro"]*100,2)}%\n'
+    arquivo.close()
+    arquivo = open('questao7.out','w')
+    arquivo.write(res)
+    arquivo.close()
+    print(f'Lucro < 10%: {cont_10}')
+    print(f'Lucro entre 10% e 20%: {cont_10_20}')
+    print(f'Lucro > 20%: {cont_20}')
 
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
